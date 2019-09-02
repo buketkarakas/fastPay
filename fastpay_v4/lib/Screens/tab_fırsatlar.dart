@@ -20,7 +20,7 @@ class _TabFirsatlarState extends State<TabFirsatlar> {
   String _searchText = "";
 
   Future<CampaignData> kampanyaAl() async {
-    return http.get('https://fastpaydev.denizbank.com/api/campaign', headers: {
+    return http.get('*******************', headers: {
       'Content-Type': 'application/json'
     }).then((http.Response response) {
       final int statusCode = response.statusCode;
