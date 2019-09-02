@@ -40,7 +40,7 @@ class Auth with ChangeNotifier {
 
     var jsonString = json.encode(payload);
 
-    return http.post('https://fastpaydev.denizbank.com/api/auth/token',
+    return http.post('*******************',
         body: jsonString,
         headers: {
           'Content-Type': 'application/json'
@@ -93,7 +93,7 @@ class Auth with ChangeNotifier {
 
     print(hash);
 
-    return http.post("https://fastpaydev.denizbank.com/api/auth/CheckPhone",
+    return http.post("**********************",
         body: jsonPhone,
         headers: {
           'Content-Type': 'application/json; charset=UTF-8',
@@ -115,7 +115,7 @@ class Auth with ChangeNotifier {
       print(statusCode);
 
       /*   final response =
-        await http.post("https://fastpaydev.denizbank.com/api/auth/CheckPhone",
+        await http.post("******************************",
             headers: {
               "Content-Type": "application/json",
               "X-Client-Id": "546C08A1-D482-4B07-867C-636B917FAFFF",
@@ -167,7 +167,7 @@ class Login with ChangeNotifier{
     var jsonString = json.encode(payload);
 
     http
-        .post('https://fastpaydev.denizbank.com/api/auth/token',
+        .post('****************',
             headers: {'Content-Type': 'application/json'}, body: jsonString)
         .then((http.Response response) {
       if (response.statusCode != 200) {
