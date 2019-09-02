@@ -6,7 +6,7 @@ class Dil_api {
 
   Future<LanguageData> getlanguages() async {
     http.get(
-        "https://fastpaydev.denizbank.com/api/Application/GetAvailableLanguages",
+        "**************************",
         headers: {
           'Content-Type': 'application/json'
         }).then((http.Response response) {
